@@ -47,6 +47,9 @@ const Button = styled.button`
     background-color: #1e3c72;
   }
 `
+const ToLogin = styled.p`
+  text-align: center;
+`
 
 const Error = styled.p`
   color: red;
@@ -128,6 +131,20 @@ export default function RegisterPage() {
         />
         {error && <Error>Email ja registrado!</Error>}
         <Button type="submit">Registrar</Button>
+        <ToLogin>
+          Já tem uma conta?{' '}
+          <a
+            href="/login"
+            style={{
+              color: '#2a5298',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              textDecoration: 'none',
+            }}
+          >
+            Entre
+          </a>
+        </ToLogin>
       </Form>
     </Container>
   )
