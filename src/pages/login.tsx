@@ -127,10 +127,21 @@ export default function LoginPage() {
           />
           Lembrar de mim
         </RememberMe>
-        {error && <Error>Email ou senha errado !</Error>}
+        {error && <Error>Credenciais erradas !</Error>}
         <Button type="submit">Entrar</Button>
         <ToRegister>
-          Não tem uma conta? <a href="/register" style={{ color: '#2a5298', fontWeight: 'bold', cursor: 'pointer', textDecoration:'none' }}>Crie uma</a>
+          Não tem uma conta?{' '}
+          <a
+            href="/register"
+            style={{
+              color: '#2a5298',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              textDecoration: 'none',
+            }}
+          >
+            Crie uma
+          </a>
         </ToRegister>
       </Form>
     </Container>
