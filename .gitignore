@@ -1,2 +1,21 @@
+# Dependências
 node_modules/
+
+# Build output
 .next/
+out/
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Docker (caso gere arquivos locais)
+docker-compose.override.yml
+
+# VSCode config (opcional, se for pessoal)
+.vscode/
